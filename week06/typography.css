@@ -1,0 +1,328 @@
+footer {
+    overflow: hidden;
+    color: white;
+    padding:10px;
+ }
+
+ footer a {
+  color: white;
+ }
+
+
+ p {
+ 	color: #cf9d9d;
+ 	font-size: large;
+  font-family: 'Bai Jamjuree', sans-serif;
+ }
+
+ul { 
+	 list-style: none;
+ }
+
+
+ h2 {
+ font-size: 50px;
+ }
+
+ h3 {
+ 	font-size: x-large;
+ 	font-weight: bold;
+ 	color: white;
+  font-family: 'Bai Jamjuree', sans-serif !important;
+ }
+
+header h2 {
+  margin: 0px !important;
+}
+
+/* ------- NAV BAR SECTION ------ */ 
+.navbar {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: large;
+  background-color: #22272b;
+  margin-bottom: 0px !important;
+}
+.navbar  a.dropdown-toggle {
+  color: yellow !important;
+}
+
+.navbar .navbar-brand {
+  color: #000000;
+}
+
+.dropdown-toggle {
+  margin-top: 0px;
+  padding: 0px 0px !important;
+}
+
+.navbar-text {
+  margin-top: 0px;
+  padding: 0px 5px !important;
+}
+
+.navbar-text a {
+  color: yellow !important;
+}
+
+.navbar-text a:hover {
+  color: white !important;
+}
+
+.navbar-nav {
+  margin: 0px !important;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+
+
+.navbar ul .dropdown-menu {
+    background-color: #6734ba;
+
+}
+.navbar ul li .dropdown-toggle:hover {
+    color: white;
+    background-color: gray !important;
+}
+
+
+.navbar ul .dropdown-menu a {
+    color: white;
+}
+
+.navbar ul .dropdown-menu a:hover {
+  background-color: yellow !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: #373839 !important;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #369002;
+}
+.navbar .navbar-text {
+  color: yellow;
+}
+.navbar .navbar-text a {
+  color: yellow;
+}
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+  color: white; 
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: white;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: white;
+  background-color: #b6d9ae;
+}
+.navbar .navbar-toggle {
+  border-color: #b6d9ae;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #b6d9ae;
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
+  color: #000000;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #000000;
+}
+.navbar .navbar-link {
+  color: #000000;
+}
+.navbar .navbar-link:hover {
+  color: white;
+}
+
+.dropdown {
+    margin-top: 15px;
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #000000;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: white;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: white;
+  background-color: #b6d9ae;
+}
+
+/* ------- CONTENT SECTION ------ */ 
+
+#content {
+  min-height: 100%;
+  height: 300px;
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+}
+
+#content h2, #lessons h3 {
+  margin: 0px !important;
+}
+
+#content h2 {
+  border: solid thick white;
+  position: absolute;
+  top: 15%;
+  left: 36%;
+  width: 400px;
+  font-size: 55px;
+  padding: 5px;
+  color: white;
+}
+
+
+.button {
+    background-color: #009688;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    top: 180px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/*.button  {
+    background-color: red !important;
+} */
+
+.btn a:hover, a:active{
+  background-color: #008779;
+  color: #f7ff91;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/image.jpg");
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------- Banner SECTION ------ */ 
+
+#banner {
+  background-color: #4a0056;
+  min-height: 50px;
+
+}
+/* ------- Lessons SECTION ------ */ 
+
+#lessons {
+  display: inline-block;
+  min-height: 40vh;
+  background-color: white;
+
+}
+
+.aboutme {
+  background-color:#52297e;
+  width: 50%;
+  height: 500px;
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.aboutme h3, .aboutme p {
+  margin-top: 20px;
+}
+
+#au {
+  margin-top: 15px;
+}
+#au p {
+  font-size: 18pt;
+  color: white;
+}
+
+#au span {
+  font-size: 12pt;
+  display: block;
+  color: #cf9d9d;
+  margin-bottom: 5px;
+}
+
+
+
+.lessonLink a  {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.lessonLink a:hover {
+    background-color:#000;
+    opacity:0.5;
+}
+
+
+.recentLesson {
+  background-color: #22272b;
+  width:50%;
+  height: 500px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.recentLesson  a {
+  color: yellow !important;
+ }
+
+
+
+
+/* ------- FOOTER SECTION ------ */ 
+
+footer a {
+  border-bottom: 1px solid #453886;
+  color: white;
+  padding-bottom: .25em;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 10%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
