@@ -1,39 +1,63 @@
-footer {
-    overflow: hidden;
-    color: white;
-    padding:10px;
- }
-
- footer a {
-  color: white;
- }
-
-
- p {
- 	color: #cf9d9d;
- 	font-size: large;
-  font-family: 'Bai Jamjuree', sans-serif;
- }
-
-ul { 
-	 list-style: none;
- }
-
-
- h2 {
- font-size: 50px;
- }
-
- h3 {
- 	font-size: x-large;
- 	font-weight: bold;
- 	color: white;
-  font-family: 'Bai Jamjuree', sans-serif !important;
- }
-
-header h2 {
-  margin: 0px !important;
+/*Settings Names for CSS GRID */
+.main-head {
+  grid-area: header;
 }
+.content {
+  grid-area: content;
+}
+.main-nav {
+  grid-area: nav;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.about-me {
+	grid-area: aboutme;
+}
+
+.recentLessons {
+	grid-area: recentLessons;
+}
+
+/*Styling the GRID
+*/
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    "nav"
+    "header"
+    "content"
+    "footer";
+  height: 100vh;
+  margin: 0;
+}
+
+@media (min-width: 500px) {
+  
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+   #lessons {
+  	display: grid;
+  	grid-template-areas: 
+  	"aboutme  recentLessons";
+  	grid-template-columns: 1fr 1fr;
+
+  }
+  
+}
+
+
+
 
 /* ------- NAV BAR SECTION ------ */ 
 .navbar {
@@ -41,6 +65,7 @@ header h2 {
   font-size: large;
   background-color: #22272b;
   margin-bottom: 0px !important;
+  border-radius: 0 !important;
 }
 .navbar  a.dropdown-toggle {
   color: yellow !important;
@@ -83,7 +108,7 @@ header h2 {
 
 
 .navbar ul .dropdown-menu {
-    background-color: #6734ba;
+    background-color: black;
 
 }
 .navbar ul li .dropdown-toggle:hover {
@@ -172,32 +197,61 @@ header h2 {
   background-color: #b6d9ae;
 }
 
-/* ------- CONTENT SECTION ------ */ 
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: pink;
+    border-color: yellow;
+}
 
-.content {
-  min-height: 100%;
-  height: 300px;
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+    background-color: pink;
+}
+
+
+/* ------- Banner SECTION ------ */ 
+
+.header #banner {
+  background-color: #4a0056;
+  height: 50px;
+  margin-top:100px;
+}
+
+
+/* ------- HEADER SECTION ------ */ 
+
+.header {
   text-align: center;
   font-family: 'Caveat Brush', cursive;
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
+    background-image: url("../images/image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.content h2, #lessons h3 {
-  margin: 0px !important;
-}
 
-.content h2 {
-  border: solid thick white;
-  position: absolute;
-  top: 15%;
-  left: 36%;
-  width: 400px;
+
+
+
+.header h2 {
+ margin-top:100px;
+  text-align: center;
   font-size: 55px;
   padding: 5px;
   color: white;
-}
+  margin-top:40px;
+  margin-bottom: 50px;
+
+ }
 
 
 .button {
+	margin-top:50px;
     background-color: #009688;
     border: none;
     color: white;
@@ -205,8 +259,7 @@ header h2 {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    position: relative;
-    top: 180px;
+    margin-top:30px;
     font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -220,18 +273,6 @@ header h2 {
 }
 
 
-.parallax {
-    /* The image used */
-    background-image: url("../images/image.jpg");
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* ------- Banner SECTION ------ */ 
 
@@ -243,7 +284,6 @@ header h2 {
 /* ------- Lessons SECTION ------ */ 
 
 #lessons {
-  display: inline-block;
   min-height: 40vh;
   background-color: white;
 
@@ -251,8 +291,6 @@ header h2 {
 
 .aboutme {
   background-color:#52297e;
-  width: 50%;
-  height: 500px;
   clear: both;
   overflow: hidden;
   text-align: center;
@@ -294,12 +332,15 @@ header h2 {
 
 .recentLesson {
   background-color: #22272b;
-  width:50%;
-  height: 500px;
   padding: 20px;
   color: white;
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
+}
+
 
 .recentLesson  a {
   color: yellow !important;
@@ -308,8 +349,22 @@ header h2 {
 
 
 
+
+
+
+
 /* ------- FOOTER SECTION ------ */ 
 
+footer {
+	  background-image: url("../images/image.jpg");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  overflow: hidden;
+      color: white;
+      padding:10px;
+      height: 150px;
+
+}
 footer a {
   border-bottom: 1px solid #453886;
   color: white;
@@ -326,3 +381,47 @@ footer a:hover {
   padding-bottom: .3em;
   text-decoration: none;
 }
+
+
+
+
+
+
+ p {
+ 	color: #cf9d9d;
+ 	font-size: large;
+  	font-family: 'Bai Jamjuree', sans-serif;
+ }
+
+ul { 
+	 list-style: none;
+ }
+
+
+ h2 {
+ font-size: 50px;
+ }
+
+ h3 {
+ 	font-size: x-large;
+ 	font-weight: bold;
+ 	color: white;
+  	font-family: 'Bai Jamjuree', sans-serif !important;
+ }
+
+header h2 {
+  margin: 0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
