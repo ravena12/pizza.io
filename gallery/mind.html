@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Raven's Mind</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Raven"> 
+    <link rel="stylesheet" href="styles/mind.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+	<main>
+		<div id="taskbar">
+        <div id="start" class="startRest">Start</div>
+        <div id="startMenu">
+            <div id="left">
+                <div class="b">Windows
+                   <span class="num95">95</span>
+                </div>
+            </div>
+            <div class="menuItem expander">Programs</div>
+            <div class="menuItem expander">Documents</div>
+            <div class="menuItem expander">Settings</div>
+            <div class="menuItem">Find</div>
+            <div class="menuItem">Help</div>
+            <div class="menuItem">Run</div>
+            <div class="divider"></div>
+            <div class="menuItem" id="shutdown"><a href="./galleryIndex.html">Sh<span style="text-decoration:underline;">u</span>t Down</a></div>
+        </div>
+        <div id="notifications">
+            <div id="clock"></div>
+        </div>
+        <div id="icon">
+        	<div id="myComputerHeader">
+        		<p class="clickme">My Computer</p>
+        	</div>
+        </div>
+        <div id="iconRecycle">
+        	<div id="myRecycleHeader">
+        		<p>Recycle</p>
+        	</div>
+        </div>
+         <div id="iconNotepad">
+        	<div id="myNotepadHeader">
+        		<p class="clickme3">FunNotes.txt</p>
+        	</div>
+        </div>
+        <div id="iconMusic">
+        	<div id="myMusicHeader">
+        		<p>My Jams</p>
+        	</div>
+        </div>
+        <div id="iconFolder">
+        	<div id="myFolderHeader">
+        		<p class="clickme">Gallery</p>
+        	</div>
+        </div>	
+    </div>
+	</main>
+	<section class="windowModal">
+		<div class="window">
+	  <div class="titlebar">
+	    Raven's Computer
+	    <div class="titlebar-buttons closeme">&times;</div>
+	  </div>
+	  <div class="content">
+	    <div>
+	    	<ul class="randomPictures">
+	    		<li onclick="pic1('arcade.jpg', 'Cool Neon Arcade I found at a bowling alley')"><span class="imgIcon"></span>arcade.jpg</li>
+	    		<li onclick="pic1('banana.png', 'My friend bought a banana costume, and I was excited about it.')"><span class="imgIcon"></span>banana.png</li>
+	    		<li onclick="pic1('carrot.jpg', 'I filmed a video, and this was part of it.')"><span class="imgIcon"></span>carrot.jpg</li>
+	    		<li onclick="pic1('momo.jpg', 'My friends cat. This is such a wholesome picture')"><span class="imgIcon"></span>momo.jpg</li>
+	    		<li onclick="pic1('iceland.jpg', 'Hiking in Iceland! I was amazed at how much land I could fit in this picture.')"><span class="imgIcon"></span>iceland.jpg</li>
+	    		<li onclick="pic1('sauk.jpg', 'The tallest mountain I ever climbed. Sauk Mountain.')"><span class="imgIcon"></span>sauk.jpg</li>
+	    		<li onclick="pic1('sunset.jpg', 'Edmonds epic sunset')"><span class="imgIcon"></span>sunset.jpg</li>
+	    		<li onclick="pic1('chick.jpg', 'Shocked peep')"><span class="imgIcon"></span>chick.jpg</li>
+	    		<li onclick="pic1('ray.jpg', 'My friends puppy')"><span class="imgIcon"></span>ray.jpg</li>
+	    		<li onclick="pic1('devin.png', 'My beloved fish, Devin.')"><span class="imgIcon"></span>devin.png</li>
+	    	</ul>
+	    </div>
+	    <div class="buttons-right">
+	      <div class="button default closeme">Exit</div>
+	    </div>
+	  </div>
+	</div>
+	</section>
+	<section id="windowModal">
+		<div class="window2">
+	  <div class="titlebar">
+	    Raven's Image
+	    <div class="titlebar-buttons closeme2">&times;</div>
+	  </div>
+	  <div class="content2">
+	  	<div id="imgPlace"></div>
+	  </div>
+	</div>
+	</section>
+	<section class="windowModal">
+		<div class="windowNotePad">
+	  <div class="titlebar">
+	    Programs - NotePad
+	    <div class="titlebar-buttons closeme3">&times;</div>
+	    <ul class="toolbar">
+		    <li><u>F</u>ile</li>
+		    <li><u>E</u>dit</li>
+		    <li><u>V</u>iew</li>
+		    <li><u>H</u>elp</li>
+  		</ul>
+	  </div>
+	  <div class="content">
+	    <div class="notepad-content">
+		    <h1>Dead Poets Society </h1> 
+			<p>The boys get up from their seats and gather around Keating in the centerof the class.</p>
+			<p>KEATING</p>
+			<p>We don't read and write poetry because it's cute. We read and write poetry because we are members of the human race. And the human race is filled with passion. Medicine, law, business, engineering, these are all noble pursuits, and necessary to sustain life. But poetry, beauty,
+		romance, love, these are what we stay alive for. To quote from Whitman: "O me, o life of the questions of these recurring, of the endless trains of the faithless, of cities filled with the foolish. What good amid these, o me, o life? Answer: that you are here. That life exists, and identity.
+		That the powerful play goes on, and you may contribute a verse. That the powerful play goes on and you may contribute a verse.</p>					
+	    </div>
+	    <div class="buttons-right">
+	      <div class="button default closeme3">Exit</div>
+	    </div>
+	  </div>
+	</div>
+	</section>
+	<div class="slider">
+  
+  <a href="#slide-1">1</a>
+  <a href="#slide-2">2</a>
+  <a href="#slide-3">3</a>
+  <a href="#slide-4">4</a>
+  <a href="#slide-5">5</a>
+
+  <div class="slides">
+    <div id="slide-1">
+    </div>
+    <div id="slide-2">
+    </div>
+    <div id="slide-3">
+    </div>
+    <div id="slide-4">
+    </div>
+    <div id="slide-5">
+    </div>
+  </div>
+</div>
+	<footer>
+		<nav></nav>
+	</footer>
+
+</body>
+<script type="text/javascript">
+	//Start Toolbar functions
+	$(document).ready(function () {
+        startTime();
+        $('#startMenu').hide();
+        $('#start').click(function () {
+            $('#startMenu').toggle();
+            $(this).toggleClass('startClick');
+        });
+
+        $('#desktop').click(function () {
+            $('#startMenu').hide();
+            $('#start').removeClass('startClick').addClass('startRest');
+        })
+        $('.desktopIcon').dblclick(function () {
+            alert($(this).text());
+        });
+    });
+
+
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        // add a zero in front of numbers<10
+        m = checkTime(m);
+        s = checkTime(s);
+        var hd = h;
+        $('#clock').html((hd = 0 ? "12" : hd > 12 ? hd - 12 : hd) + ":" + m + " " + (h < 12 ? "AM" : "PM"));
+        t = setTimeout(function () { startTime() }, 500);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+// Make the DIV element draggable:
+// dragElement(document.getElementById("myComputer"));
+dragElement(document.getElementById("icon"));
+dragElement(document.getElementById("iconRecycle"));
+dragElement(document.getElementById("iconNotepad"));
+dragElement(document.getElementById("iconMusic"));
+dragElement(document.getElementById("iconFolder"));
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV: 
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+
+
+//WINDOW1
+  $('.clickme').toggleClass("active");
+  $('.window').draggable({
+    handle: '.titlebar'
+  });
+
+  $('.closeme').click(function() {
+    $('.window').hide();
+    $('.clickme').toggleClass("active");
+    var windowBox = document.getElementsByClassName("window2");
+  windowBox[0].setAttribute("style", "display:none;");
+  });
+
+  $('.clickme').click(function() {
+    $('.window').show();
+  $('.clickme').toggleClass("active");
+  });
+
+  //WINDOW 2
+
+  $('.clickme2').toggleClass("active");
+  $('.window2').draggable({
+    handle: '.titlebar'
+  });
+
+  $('.closeme2').click(function() {
+    $('.window2').hide();
+    $('.clickme').toggleClass("active");
+    // document.getElementById("remove").remove();
+  });
+
+  $('.clickme2').click(function() {
+    $('.window2').show();
+  $('.clickme2').toggleClass("active");
+  });
+
+  //NotePAd
+
+  $('.clickme3').toggleClass("active");
+  $('.windowNotePad').draggable({
+    handle: '.titlebar'
+  });
+
+  $('.closeme3').click(function() {
+    $('.windowNotePad').hide();
+    $('.clickme3').toggleClass("active");
+    // document.getElementById("remove").remove();
+  });
+
+  $('.clickme3').click(function() {
+    $('.windowNotePad').show();
+  $('.clickme3').toggleClass("active");
+  });
+
+  function pic1(filePathName, caption) {
+  	let y = document.getElementById("remove");
+  	if(y) {
+  		y.parentNode.removeChild(y);
+  	}
+
+  	let filePath = "../assets/"+filePathName;
+
+    	console.log(filePathName);
+  var updateDiv = document.getElementById("imgPlace");
+  updateDiv.setAttribute("style", "background-image: url("+filePath+"); background-repeat: no-repeat; background-size: contain; height: 296px; width: 350px")
+  // Build it using this variable
+ var description = "<p class='description'>" + caption + "</p>"; 
+// Insert using this:
+   updateDiv.innerHTML = description;
+
+  // var x = document.createElement("img");
+  // x.setAttribute("src", filePath);
+  // x.setAttribute("id", "remove");
+  // x.setAttribute("width", "auto");
+  // x.setAttribute("height", "auto");
+  // x.setAttribute("alt", filePathName);
+  
+  // var elemen = document.getElementsByClassName("content2");
+  // elemen[0].prepend(x);
+  var windowBox = document.getElementsByClassName("window2");
+  windowBox[0].setAttribute("style", "display:block;");
+}
+  
+
+   
+</script>
+</html>
