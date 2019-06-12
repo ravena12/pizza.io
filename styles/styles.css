@@ -13,6 +13,14 @@
   grid-area: footer;
 }
 
+.gallery {
+  grid-area: gallery;
+}
+
+.home-base {
+  grid-area: homeB;
+}
+
 .about-me {
 	grid-area: aboutme;
 }
@@ -48,7 +56,8 @@
 @media (min-width: 1200px) {
    .lessons {
   	display: grid;
-  	grid-template-areas: 
+    grid-template-areas: 
+    "homeb     gallery"
   	"aboutme  recentLessons";
   	grid-template-columns: 1fr 1fr;
 
