@@ -298,6 +298,29 @@
   color: white;
 }
 
+.angular {
+  background-color: #531043;
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.gallery {
+  background-color: #008080;
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  color: white;
+
+}
+
+.gallery p {
+  color: black;
+}
+
 .aboutme h3, .aboutme p {
   margin-top: 20px;
 }
@@ -339,6 +362,15 @@
   flex-flow: column;
   align-items: center;
 }
+
+.recentLesson2 {
+  background-color: #008080;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 
