@@ -46,7 +46,7 @@
 
 
 @media (min-width: 1200px) {
-   #lessons {
+   .lessons {
   	display: grid;
   	grid-template-areas: 
   	"aboutme  recentLessons";
@@ -234,10 +234,6 @@
   background-repeat: no-repeat;
 }
 
-
-
-
-
 .header h2 {
  margin-top:100px;
   text-align: center;
@@ -283,7 +279,7 @@
 }
 /* ------- Lessons SECTION ------ */ 
 
-#lessons {
+.lessons {
   min-height: 40vh;
   background-color: white;
 
@@ -443,16 +439,4 @@ ul {
 header h2 {
   margin: 0px !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
